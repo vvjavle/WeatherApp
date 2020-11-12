@@ -22,4 +22,6 @@ function getReults (query) {
 
 function displayResults (weather) {
     console.log(weather);
+    let city = document.getElementById("citydiv");
+    city.innerText = `${weather.name}, ${weather.sys.country}`;
 }
